@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Graphik/GraphikRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/Graphik/GraphikMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/Graphik/GraphikSemibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Graphik/GraphikBold.otf") format("opentype");
+}
+
+* {
+  font-family: "Graphik";
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-control {
+  height: 38px;
+}
+.form-check {
+  min-height: 18px !important;
+  max-height: 18px !important;
+}
+.form-check-label {
+  color: #fff !important;
+}
+.text-primary {
+  color: #231f20 !important;
+  color: #fff !important;
+}
+.text-secondary {
+  color: #c92a2a !important;
+  color: #fff !important;
+}
+.bg-primary {
+  background-color: #c92a2a !important;
+}
+.btn-primary {
+  background-color: #ee4749 !important;
+  min-height: 50px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-radius: 0.3125rem;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: rgb(225, 67, 70) !important;
+}
+
+.form_login {
+  
+  max-width: 600px;
+  min-width: 100%;
+}
+
+
+
+
+.form_login a {
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+
+
+.form_login div label {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.form-check{
+  margin-top: 0.5rem;
+}
+
+#logo {
+  height: 50px;
+}
+@media (min-width: 1200px){
+  #logo{
+    height: 65px;
+  }
+}
+.form_login > div {
+  padding: 2.5rem 1.875rem;
+  max-width: 400px;
+}
+
+
+.img {
+  top: 0;
+  position: absolute;
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+#flexCheckDefault {
+  position: relative;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#flexCheckDefault:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: url("./assets/imgs/check.svg") center center no-repeat;
+  background-size: 100%;
+  z-index: 2;
+
+}
+
+#flexCheckDefault:checked {
+  background-color: #ced4da !important;
+  border: 0;
+}
+@media (min-width: 1200px) and (max-height: 750px) {
+  .form-control {
+    height: 30px;
+  }
+  .form_login > div {
+    max-width: 320px;
+  }
+  #logo {
+    height: 50px;
+  }
+
+  .form_login div label {
+    font-size: 0.6rem;
+    margin: 0;
+    /* padding: 0; */
+  }
+
+  .btn-primary {
+    min-height: 40px  !important;
+    max-height: 40px !important;
+    font-size: 0.8rem;
+  }
+
+  .text-secondary{
+    font-size: 0.6rem !important;
+  }
+
+  .form-check-input{
+    display: flex;
+        
+    width: 14px;
+    height: 14px;
+  }
+  .form-check{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    vertical-align: middle;
+    margin-top: 0.25rem !important;
+
+
+  }
+a.text-secondary{
+    
+    margin-top: 0.50rem !important;
+  }
+
+  .form-check-label{
+    padding-left: 0.25rem;
+    padding-top: 0.25rem;
+  }
+}
+
+.form_login div i {
+  cursor: pointer;
+  position: absolute;
+  top: 52%;
+  right: 17px;
+  z-index: 99999999;
+}
